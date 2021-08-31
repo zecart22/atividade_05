@@ -1,268 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="icon-96x96.webp">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Landing Page Kenzie Academy</title>
-</head>
-<body>
+/*
+Theme Name: Landing Page Kenzie Academy
+Theme URI: https://kenzie.com.br/
+Author: Kenzie Academy 
+Author URI: https://kenzie.com.br/
+Description: Descrção do thema.
+Version: 1.0
+Text Domain: https://kenzie.com.br/
+--------------------------------------------
+ESTRUTURAÇÃO BASE
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** ESTILOS GERAIS
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @MEDIA
+family=Montserrat -> Menus
+family=Lato -> Títulos, textos
+*/
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* FONTS */
+
+/* VARIÁVEIS */
+:root{}
   
-  <!-- CABEÇALHO -->
-  <header class="topo">
+/* GERAL */
+html, body, figure, div, input, textarea, p, h1, h3, h4, h5, h6, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+    list-style: none;
+    margin: 0 auto;
+}
 
-    <div class="large-container">
-      <!-- LOGO -->
-      <figure>
-        <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
-      </figure>
+h2{
+  font-family: Montserrat ;
+}
+img{
+    max-width: 80px;
+}
+.tituloDestaque{
+  font-size:63px;
+}
+.subTituloDestaque{
+  text-align: center;
+  font-size:21px;
+  display: flex;
+  flex-direction:;
+  margin:2px;
+}
 
-      <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
-        <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
-          <li><a href="#2">Agenda</a></li>
-          <li><a href="#3">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-
-  </header>
-
-  <!-- PÁGINA INICIAL -->
-  <main class="inicial">
-
-    <!-- ÁREA DE DESTAQUE -->
-    <section class="secaoDestaque">
-
-      <h2>Lorem ipsum dolor sit Python</h2>
-      <p>100% Online</p>
-
-      <!-- FORMULÁRIO -->
-      <div class="secaoDestaqueFormulario">
-        <input type="email"  placeholder="E-mail" required>
-        <button type="button">Subscribe</button>
-      </div>
-
-    </section>
-
-    <!-- SEÇÃO SOBRE -->
-    <section class="secaoSobre">
-
-      <article class="flex">
-        
-        <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
-
-          <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
-          </p>
-
-          <span>Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span>
-
-          <button>Subscribe</button>
-
-        </div>
-
-        <!-- COLUNA DIREITA -->
-        <div class="flex-col">
-
-          <figure>
-            <img src="assets/img/python.png" alt="python">
-            <figcaption>python</figcaption>  
-          </figure>      
-
-        </div>
-
-        <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
-
-            <figure>
-              <img src="assets/img/JavaScript-logo.png" alt="Java Script">
-              <figcaption>Java Script</figcaption>  
-            </figure>      
+div.flex{
+    display: flex;
+}
+div.full-container{
+    width: 100%;
+    max-width: 1850px;
+    margin:0 auto;
+}
+div.large-container{
+    width: 100%;
+    max-width: 1170px;
+    margin:0 auto;
+}
+div.container{
+    width: 100%;
+    max-width: 1140px;
+    margin:0 auto;
+}
+/* GERAL */
+.secaoDestaque{
+  font-family: lato;
+  color:white;
   
-          </div>
+}
 
-        <!-- COLUNA DIREITA -->
-        <div class="flex-col">
-
-            <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
-            <ul>
-                <li>The standard Lorem Ipsum passage, used since the 1500s</li>
-                <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-                <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-            </ul>
-
-        </div>
-
-        
-
-      </article>
-
-    </section>
-
-    <!-- SEÇÃO CURSOS -->
-    <section class="secaoCursos">
-
-      <article>
-
-        <h2>COURSES</h2>
-        <p>What we offer</p>
-
-        <!-- LISTA DE CURSOS -->
-        <ul>
-        
-          <li>
-            <img src="assets/img/html-css.png" alt="">
-            <h3>Html/Css</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
-          </li>
-
-          <li>
-            <img src="assets/img/js.png" alt="">
-            <h3>JavaScript</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
-          </li>
-
-          <li>
-            <img src="assets/img/react.png" alt="">
-            <h3>React</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
-          </li>
-
-          <li>
-            <img src="assets/img/py.webp" alt="">
-            <h3>Python</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
-          </li>
-
-          <li>
-            <img src="assets/img/dj.png" alt="">
-            <h3>Django</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
-          </li>
-
-          <li>
-            <img src="assets/img/multitasking.svg" alt="">
-            <h3 style="color:#303030;">Soft Skills</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
-          </li>
-          
-        </ul>
-
-      </article>
-
-    </section>
-
-    <section class="secaoCalendar">
-
-      <h2>SCHEDULE</h2>
-      <p>Lorem ipsum dolor sit schedule</p>
-
-      <!-- LISTA CALENDÁRIO -->
-      <ul class="calendario">
-
-        <li>
-          <span class="calendario-data">22/02</span>
-          <h3>HTML/CSS</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
-          <div class="calendario-data-rodape">
-            <span>7mp</span>
-            <button>Sign Up</button>
-          </div>
-        </li>
-
-        <li>
-          <span class="calendario-data">23/02</span>
-          <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
-          <div class="calendario-data-rodape">
-            <span>7mp</span>
-            <button>Sign Up</button>
-          </div>
-        </li>
-
-        <li>
-          <span class="calendario-data">24/02</span>
-          <h3>Python</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
-          <div class="calendario-data-rodape">
-            <span>7mp</span>
-            <button>Sign Up</button>
-          </div>
-        </li>
-
-      </ul>
-
-    </section>
-
-    <section class="secaoContato">
-
-      <div class="flex">
-
-        <!-- COLUNA LADO ESQUERDO -->
-        <div class="flex-col">
-          
-          <div class="secaoContato-informacoes">
-          
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            
-            <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <!-- COLUNA LADO DIRETO -->
-        <div class="flex-col">
-          
-          <h2>Contact</h2>
-          
-          <form action="">
-
-            <div class="form-input-model">
-              <label for="nome">Nome</label>
-              <input type="text" placeholder="Name" id="nome" name="nome">
-            </div>
-
-            <div class="form-input-model">
-              <label for="email">E-mail</label>
-              <input type="text" placeholder="E-mail" id="email" name="email">
-            </div>
-
-            <div class="form-input-model">
-              <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
-            </div>
-
-            <input type="submit" value="Send">
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
-  </footer>
-
-  <script src="assets/js/script.js"></script>
-</body>
-</html>
+.formulario{
+  
+}
 
 
+.formFilho{
+  width: 400px;
+  color: red;
+}
+
+fildset{
+  width:400px;
+  height:50px;
+}
+
+input{
+  color:red;
+  
+}
+
+#menuNav{
+  list-style: none;
+  padding: 0;
+  background-color:#00043e;
+  opacity: ;
+}
+
+#menuNav li {
+  display: inline;
+}
+
+#menuNav li a{
+  color:#FFFFFF;
+  text-decoration:none;
+  display: inline-block;
+  padding: 2%;
+  transition: background 0.5s
+  float: right;
+}
+
+.logoKenzie{
+  size: 5%;
+  color:black;
+}
+
+#menuNav li a:hover{
+  background-color:#000080;
+  
+}
+     
+/* HTML */
+html{}
+/* HTML */
+  
+/* BODY */
+body{}
+/* BODY */
+  
+/* HEADER */
+header{}
+/* HEADER */
+.cabecaAzul{
+  background-image:url("https://bit.ly/2WFnMJ3");
+  background-position: left top;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  padding: 5%;
+  display:;
+  justify-content: ;
+  
+}  
+/* FOOTER */
+footer{}
+/* FOOTER */
+
+/* INICIAL */
+main{}
+/* INICIAL */
+
+/* EXTRAS */
+
+/* para estilizar a scrollbar */
+::-webkit-scrollbar{}
+::-webkit-scrollbar-button{}
+::-webkit-scrollbar-track{}
+::-webkit-scrollbar-track-piece{}
+::-webkit-scrollbar-thumb{}
+::-webkit-scrollbar-corner{}
+::-webkit-resizer{}
+
+/* EXTRAS */
+  
+
+/* MEDIA QUERIES */
+    @media screen and (min-width: 400px) {}
+  
+    @media screen and (min-width: 800px) {}
+/* MEDIA QUERIES */
